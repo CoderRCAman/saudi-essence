@@ -157,7 +157,7 @@ nav {
   scale: 1;
   transition: scale 300ms ease-in;
   border-radius: 0.3rem 0.3rem 0 0;
-  min-height: 300px;
+  height: 250px;
 }
 
 div.city-description p:first-child {
