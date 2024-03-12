@@ -175,23 +175,120 @@ div.city-description p:nth-child(2) {
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
-  gap:0.5rem;
+  gap: 0.5rem;
 }
 .places-more p {
   color: #64748b;
 }
-.places-more button{
-  background: transparent; 
+.places-more button {
+  background: transparent;
   border: 1px solid #6366f1;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   color: #6366f1;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
 
 .container {
   width: 95%;
 }
+
+.visa-contents {
+  position: relative;
+}
+.visa-contents img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: 50% 50%;
+  position: relative;
+  display: block;
+}
+.visa-img {
+  position: relative;
+  height: 500px;
+}
+.visa-img::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+}
+div.visa-contents div:nth-child(2) {
+  position: absolute;
+  background-color: red;
+  height: 150px;
+  bottom: -75px;
+  width: max(40%, 400px);
+  left: 50%; /* Positioning from left */
+  transform: translateX(-50%); /* Translate back by half of its own width */
+  background: #fff;
+  z-index: 30;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 0.4rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+div.visa-contents div:nth-child(2) p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+div.visa-contents div:nth-child(2) button {
+  background: transparent;
+  border: 1px solid #6366f1;
+  padding: 0.5em 1em;
+  color: #6366f1;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.te-video {
+  width: 100%;
+  height: 600px;
+}
+.te-contents h3 { 
+  margin-top: 1.4rem;
+  font-size: 2rem;
+  color: #475569;
+}
+
+.te-content {
+  margin-top: 20px; 
+}
+
+div.te-content p:first-child {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+div.te-content p:nth-child(2) {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+} 
+div.te-content p:nth-child(3) {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+} 
+div.te-content ul {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: .9rem;
+}
+
 @media (min-width: 640px) {
   /*   small screen */
   .container {
